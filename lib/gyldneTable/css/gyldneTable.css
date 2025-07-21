@@ -1,0 +1,60 @@
+:root {
+    --gyldne-table-color1: var(--color1);
+    --gyldne-table-color2: var(--color2);
+    --gyldne-table-color3: var(--color3);
+    --gyldne-table-color4: var(--color4);
+    --gyldne-table-border-color: silver;
+}
+
+.gyldne-table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gyldne-table-toolbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.gyldne-table-toolbar > input[data-action="filter"] {
+    margin: 0;
+    margin-right: auto;
+}
+
+.gyldne-table-toolbar > * {
+    margin: 0 2px;
+}
+
+.gyldne-table {
+    margin-top: 15px;
+    box-shadow: 0 0 2px 0px var(--gyldne-table-border-color);
+    border-collapse: collapse;
+    background-color: var(--gyldne-table-color3);
+}
+
+.gyldne-table > thead {
+    background-color: var(--gyldne-table-color1);
+    color: white;
+}
+
+.gyldne-table > tbody {
+    border: 1px solid var(--gyldne-table-border-color);
+}
+
+.gyldne-table > thead > tr > th,
+.gyldne-table > tbody > tr > td {
+    text-align: left;
+    padding: 10px;
+}
+
+.gyldne-table > tbody > tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gyldne-table > tbody > tr:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gyldne-table > tbody > tr.selected {
+    background-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,76 @@
+body::before {
+	content: '';
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background: url(../images/background.jpg);
+	background-size: cover;
+    z-index: -1;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    color: white;
+}
+
+.login-wrapper {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 25px;
+    border-radius: 5px;
+}
+
+.logo-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--color4);
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container > * {
+    margin: 5px 0;
+}
+
+input {
+    box-shadow: none;
+}
+
+input:focus {
+    box-shadow: none;
+}
+
+.input-label-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 1px 0 var(--input-shadow);
+    transition-duration: var(--transition-duration);
+}
+
+.input-label-group:focus-within {
+    box-shadow: 0 0 3px 0 var(--input-shadow);
+}
+
+.input-label-group > i {
+    text-align: center;
+    min-width: 30px;
+}
+
+.input-label-group > input {
+    flex: 1;
+}
+
+.input-label-group,
+.input-label-group > input,
+form > input {
+    border-radius: 5px;
+}

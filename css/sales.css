@@ -1,0 +1,41 @@
+.sale-dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-toolbar,
+.sale-chart-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.sale-chart-container {
+    width: 100%;
+}
+
+.sale-toolbar {
+    padding-right: 20px;
+}
+
+.sale-chart-wrapper {
+    margin-bottom: 30px;
+}
+
+.sale-toolbar > .input-group {
+    flex-direction: row;
+    margin: 0;
+}
+
+.sale-toolbar > .input-group:first-child {
+    margin-left: auto;
+}
+
+.sale-toolbar > .input-group > label {
+    margin: auto 10px;
+}
+
+.sale-chart-wrapper > .gyldne-table-container {
+	padding-top: 31px;
+	padding-right: 20px;
+}
+

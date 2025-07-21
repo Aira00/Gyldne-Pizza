@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon-16x16.png">
+    <link rel="manifest" href="./resources/site.webmanifest">
+    <link rel="shortcut icon" href="./resources/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="./resources/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Gyldne Pizza (Intern) - Ansatte</title>
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="./lib/dtsel/css/dtsel.css" />
+    <link rel="stylesheet" href="./lib/gyldneTable/css/gyldneTable.css" />
+</head>
+<body>
+    <div class="nav-wrapper">
+        <nav>
+            <div class="nav-head">
+                <img class="logo" src="./images/logo.png" alt="Gyldne Pizza logo">
+                <h3 id="username"></h3>
+            </div>
+            <ul class="nav-list">
+                <li><a href="./sales.html"><i class="fas fa-chart-line"></i> Salg</a></li>
+                <li class="active"><a href="./employees.html"><i class="fas fa-user-tie"></i> Ansatte</a></li>
+                <li><a href="./restaurants.html"><i class="fas fa-store"></i> Restauranter</a></li>
+                <li><a href="./menu.html"><i class="fas fa-utensils"></i> Meny</a></li>
+                <li><button id="signout"><i class="fas fa-sign-out-alt"></i> Logg ut</button></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle"><i class="fas fa-caret-left"></i></button>
+    </div>
+    <div class="content-wrapper">
+        <main>
+            <h1>Ansatte</h1>
+            <div class="gyldne-table-container"></div>
+        </main>
+        <footer>
+            &copy; 2021 - Gyldne Pizza
+        </footer>
+    </div>
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-header">
+                <h3></h3>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button id="modal-yes" class="success">Ok</button>
+                <button id="modal-no" class="danger">Avbryt</button>
+            </div>
+        </div>
+    </div>
+    <ul class="alert-container">
+        <template id="template-alert">
+            <li class="alert">
+                <label></label>
+                <button class="btn"><i class="fa fa-times"></i></button>
+            </li>
+        </template>
+    </ul>
+    <a id="urlReference" href="{this.html}"></a> <!-- Using this to make correct rediects in js when there is no host-->
+    <script src="./js/site.js"></script>
+    <script src="./lib/dtsel/js/dtsel.js"></script>
+    <script src="./lib/gyldneTable/js/gyldneTable.js"></script>
+    <script src="./js/employees.js"></script>
+</body>
+</html>

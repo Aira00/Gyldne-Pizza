@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon-16x16.png">
+    <link rel="manifest" href="./resources/site.webmanifest">
+    <link rel="shortcut icon" href="./resources/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="./resources/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Gyldne Pizza (Intern) - Login</title>
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <div class="content-wrapper">
+        <main>
+            <div class="login-wrapper">
+                <div class="logo-wrapper">
+                    <img class="logo" src="./images/logo.png" alt="Gyldne Pizza logo">
+                    <h3>Gyldne Pizza</h3>
+                </div>
+                <form class="login-container" onsubmit="login(event);">
+                    <div class="input-label-group">
+                        <i class="far fa-user"></i>
+                        <input id="username" type="text" placeholder="Brukernavn">
+                    </div>
+                    <div class="input-label-group">
+                        <i class="fas fa-lock"></i>
+                        <input id="password" type="password" placeholder="Passord">
+                    </div>
+                    <input class="btn" type="submit" value="Logg inn">
+                </form>
+            </div>
+        </main>
+        <footer>
+            &copy; 2021 - Gyldne Pizza
+        </footer>
+    </div>
+    <ul class="alert-container">
+        <template id="template-alert">
+            <li class="alert">
+                <label></label>
+                <button class="btn"><i class="fa fa-times"></i></button>
+            </li>
+        </template>
+    </ul>
+    <a id="urlReference" href="{this.html}"></a> <!-- Using this to make correct rediects in js when there is no host-->
+    <script src="./js/site.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
